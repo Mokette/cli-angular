@@ -6,8 +6,8 @@ Node 14.6 and Angular CLI 10.0.4+
 Find the image here
 
 Pulling the image
+`docker pull mokette/cli-angular`
 
-docker pull johnpapa/angular-cli
 Using the image in a Dockerfile
 
-FROM johnpapa/angular-cli
+`FROM mokette/cli-angular`
