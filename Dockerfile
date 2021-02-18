@@ -1,4 +1,4 @@
-FROM node:15.9.0-alpine as node-angular-cli
+FROM node:15.8.0-alpine3.10 as node-angular-cli
 
 LABEL authors="Mokette"
 
