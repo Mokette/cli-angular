@@ -6,11 +6,6 @@ LABEL authors="Mokette"
 RUN apk update \
   && apk add --update alpine-sdk \
   && apk del alpine-sdk \
-  && apk add make \
-  && apk add gcc \
-  && apk add g++ \
-  && apk add python3 \
-  && apk add python2 \
   && npm cache verify \
   && rm -rf /tmp/* /var/cache/apk/* *.tar.gz ~/.npm \
   && sed -i -e "s/bin\/ash/bin\/sh/" /etc/passwd
