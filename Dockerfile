@@ -10,6 +10,7 @@ RUN apk update \
   && apk add gcc \
   && apk add g++ \
   && apk add python3 \
+  && apk add python2 \
   && npm cache verify \
   && rm -rf /tmp/* /var/cache/apk/* *.tar.gz ~/.npm \
   && sed -i -e "s/bin\/ash/bin\/sh/" /etc/passwd
